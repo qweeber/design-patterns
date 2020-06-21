@@ -8,6 +8,8 @@ public class Main {
         warrior.hit();
         warrior.setHitStrategy(() -> System.out.println("Customowy sposob uderzenia"));
         warrior.hit();
+        warrior.setHitStrategy(new BowShutStrategy());
+        warrior.hit();
 
     }
 }
